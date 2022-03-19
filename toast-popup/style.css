@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 90%;
+  text-align: center;
+}
+
+.position-selector {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  row-gap: 1rem;
+}
+
+.toast-container {
+  position: fixed;
+  display: none;
+  background-color: red;
+  padding: 10px 20px;
+}
+
+.toast-container[position="top-left"] {
+  left: 10px;
+  top: 10px;
+}
+
+.toast-container[position="top-center"] {
+  left: 50%;
+  top: 10px;
+}
+
+.toast-container[position="top-right"] {
+  right: 10px;
+  top: 10px;
+}
+
+.toast-container[position="center-left"] {
+  left: 10px;
+  top: 50%;
+}
+.toast-container[position="center-right"] {
+  right: 10px;
+  top: 50%;
+}
+.toast-container[position="bottom-left"] {
+  bottom: 10px;
+  left: 10px;
+}
+.toast-container[position="bottom-center"] {
+  bottom: 10px;
+  left: 50%;
+}
+.toast-container[position="bottom-right"] {
+  bottom: 10px;
+  right: 10px;
+}
