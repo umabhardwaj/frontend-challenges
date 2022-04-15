@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.btn.btn-primary {
+  background-color: #5affd8;
+  padding: 10px 16px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.btn-primary.small {
+  padding: 4px 6px;
+}
+
+button:disabled,
+button.btn:disabled {
+  cursor: not-allowed;
+}
+
+.disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+.board {
+  display: inline-grid;
+}
+
+.box {
+  outline: 1px solid grey;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: large;
+}
